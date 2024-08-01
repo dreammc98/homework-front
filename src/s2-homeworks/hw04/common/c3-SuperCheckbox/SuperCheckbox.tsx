@@ -23,7 +23,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = ({
   ...restProps // все остальные пропсы попадут в объект restProps
 }) => {
   const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-    // задачка на написание онченджа
+    // задачка на написание онченджаyy
     if (onChangeChecked) {
       onChangeChecked(e.currentTarget.checked);
     }
@@ -36,7 +36,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = ({
       <input
         id={id}
         type={"checkbox"}
-        onChange={(e) => onChangeCallback(e)}
+        onChange={!onChangeCallback ? onChangeCallback : onChange}
         className={finalInputClassName}
         {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
       />
