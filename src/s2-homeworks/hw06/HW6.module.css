@@ -1,5 +1,13 @@
 .buttonsContainer {
+  display: flex;
+  gap: 24px;
 }
 
+.buttonsContainer button {
+  cursor: pointer;
+}
+.buttonsContainer button:active {
+  transform: scale(0.98);
+}
 .editableSpanContainer {
 }
