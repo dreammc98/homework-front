@@ -9,6 +9,12 @@
   color: white;
 
   border: none;
+  white-space: nowrap;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #026fdc;
 }
 
 .disabled {
