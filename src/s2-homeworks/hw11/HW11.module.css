@@ -1,8 +1,25 @@
 .container {
+  width: 220px;
+  position: relative;
 }
 
 .wrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.wrapper span {
+  margin-left: 10px;
 }
 
 .number {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number:first-child {
+  position: absolute;
+  left: -22px;
 }
