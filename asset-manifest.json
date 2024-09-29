@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/homework-front/static/css/main.dd5256be.css",
-    "main.js": "/homework-front/static/js/main.3afd5a86.js",
+    "main.css": "/homework-front/static/css/main.0a5df8b3.css",
+    "main.js": "/homework-front/static/js/main.06759c8e.js",
     "static/js/787.66cb4309.chunk.js": "/homework-front/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/homework-front/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/200.svg": "/homework-front/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
+    "static/media/error.svg": "/homework-front/static/media/error.5a3135f381b00b53044eff200e725391.svg",
+    "static/media/500.svg": "/homework-front/static/media/500.adbc5f265f6f3c1fb9c5633ffe365afa.svg",
+    "static/media/400.svg": "/homework-front/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/404.svg": "/homework-front/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/homework-front/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/homework-front/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
@@ -11,12 +15,12 @@
     "static/media/checked.svg": "/homework-front/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/homework-front/index.html",
     "static/media/burger.svg": "/homework-front/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.dd5256be.css.map": "/homework-front/static/css/main.dd5256be.css.map",
-    "main.3afd5a86.js.map": "/homework-front/static/js/main.3afd5a86.js.map",
+    "main.0a5df8b3.css.map": "/homework-front/static/css/main.0a5df8b3.css.map",
+    "main.06759c8e.js.map": "/homework-front/static/js/main.06759c8e.js.map",
     "787.66cb4309.chunk.js.map": "/homework-front/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd5256be.css",
-    "static/js/main.3afd5a86.js"
+    "static/css/main.0a5df8b3.css",
+    "static/js/main.06759c8e.js"
   ]
 }
