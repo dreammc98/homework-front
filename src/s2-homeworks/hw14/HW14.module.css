@@ -1,7 +1,10 @@
 .tech {
-
 }
 
 .loading {
-
+  font-weight: 300;
+  font-size: 14px;
+  color: #4d4d4d;
+  text-align: end;
+  width: 160px;
 }
