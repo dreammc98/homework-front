@@ -1,65 +1,81 @@
-import React from 'react'
-import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
-import {Pagination} from '@mui/material'
-import s from './SuperPagination.module.css'
+import React from "react";
+import SuperSelect from "../../../hw07/common/c5-SuperSelect/SuperSelect";
+import { Pagination } from "@mui/material";
+import s from "./SuperPagination.module.css";
 
 export type SuperPaginationPropsType = {
-    id?: string
-    page: number
-    itemsCountForPage: number
-    totalCount: number
-    onChange: (page: number, count: number) => void
-}
+  id?: string;
+  page: number;
+  itemsCountForPage: number;
+  totalCount: number;
+  onChange: (page: number, count: number) => void;
+};
 
-const SuperPagination: React.FC<SuperPaginationPropsType> = (
-    {
-        page, itemsCountForPage, totalCount, onChange, id = 'hw15',
-    }
-) => {
-    const lastPage = 10 // пишет студент // вычислить количество страниц
+const SuperPagination: React.FC<SuperPaginationPropsType> = ({
+  page,
+  itemsCountForPage,
+  totalCount,
+  onChange,
+  id = "hw15",
+}) => {
+  const lastPage = Math.ceil(totalCount / itemsCountForPage);
 
-    const onChangeCallback = (event: any, page: number) => {
-        // пишет студент
-    }
+  const onChangeCallback = (event: any, page: number) => {
+    onChange(page, itemsCountForPage);
+    //
+  };
 
-    const onChangeSelect = (event: any) => {
-        // пишет студент
-    }
+  const onChangeSelect = (event: any) => {
+    onChange(1, event.currentTarget.value);
+  };
 
-    return (
-        <div className={s.pagination}>
-            <Pagination
-                id={id + '-pagination'}
-                sx={{
-                    // стили для Pagination // пишет студент
-                }}
-                page={page}
-                count={lastPage}
-                onChange={onChangeCallback}
-                hideNextButton
-                hidePrevButton
-            />
+  return (
+    <div className={s.pagination}>
+      <Pagination
+        id={id + "-pagination"}
+        sx={{
+          "& .MuiPaginationItem-root": {
+            borderRadius: "2px",
+            fontSize: "15px",
+          },
 
-            <span className={s.text1}>
-                показать
-            </span>
+          "& .MuiPaginationItem-root.Mui-selected": {
+            backgroundColor: "#0066CC",
+            color: "white",
+          },
+          "& .MuiPaginationItem-root.Mui-selected:hover": {
+            backgroundColor: "#0066CC",
+            color: "white",
+          },
+          "& .Mui-selected:hover": {
+            backgroundColor: "#0066CC",
+            color: "white",
+          },
+        }}
+        page={page}
+        count={lastPage}
+        onChange={onChangeCallback}
+        hideNextButton
+        hidePrevButton
+      />
 
-            <SuperSelect
-                id={id + '-pagination-select'}
-                value={itemsCountForPage}
-                options={[
-                    {id: 4, value: 4},
-                    {id: 7, value: 7},
-                    {id: 10, value: 10},
-                ]}
-                onChange={onChangeSelect}
-            />
+      <span className={s.text1}>показать</span>
 
-            <span className={s.text2}>
-                строк в таблице
-            </span>
-        </div>
-    )
-}
+      <SuperSelect
+        id={id + "-pagination-select"}
+        value={itemsCountForPage}
+        options={[
+          { id: 4, value: 4 },
+          { id: 7, value: 7 },
+          { id: 10, value: 10 },
+        ]}
+        onChange={onChangeSelect}
+        style={{ width: "43px", height: "25px", textAlign: "center" }}
+      />
 
-export default SuperPagination
+      <span className={s.text2}>строк в таблице</span>
+    </div>
+  );
+};
+
+export default SuperPagination;

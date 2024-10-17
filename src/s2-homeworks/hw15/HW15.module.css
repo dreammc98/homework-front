@@ -1,27 +1,50 @@
-.tech {
-    width: 50vw;
-}
-
-.developer {
-
-}
-
-.techHeader {
-    width: 50vw;
-}
-
-.developerHeader {
-
+.hw {
+  background-color: red;
 }
 
 .row {
-    display: flex;
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.row:last-child {
+  border-bottom: none;
+}
+
+.tech {
+  width: 50vw;
+}
+
+.developer {
+  width: 50vw;
+  padding: 0 10px;
+}
+
+.developer::first-letter {
+  text-transform: uppercase;
 }
 
 .rowHeader {
-    display: flex;
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #e5e5e5;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.techHeader {
+  width: 50vw;
+  display: flex;
+  gap: 5px;
+}
+
+.developerHeader {
+  width: 50vw;
+  display: flex;
+  gap: 5px;
 }
 
 .loading {
-
 }

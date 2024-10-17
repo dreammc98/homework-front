@@ -1,11 +1,19 @@
 .pagination {
-    display: flex;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .text1 {
+  margin-right: 10px;
+  margin-left: 20px;
+  cursor: default;
+}
 
+.text1:first-letter {
+  text-transform: uppercase;
 }
 
 .text2 {
-
+  margin-left: 6px;
+  cursor: default;
 }
